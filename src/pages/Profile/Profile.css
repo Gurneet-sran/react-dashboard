@@ -1,0 +1,27 @@
+.profile {
+  padding: var(--spacing-lg);
+}
+
+.profile__header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.profile__title {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin: 0 0 var(--spacing-sm);
+}
+
+.profile__content {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.profile__section {
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+} 

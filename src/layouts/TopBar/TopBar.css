@@ -1,0 +1,55 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-md);
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.topbar__menu-button {
+  padding: var(--spacing-sm);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.topbar__menu-icon {
+  font-size: 1.5rem;
+}
+
+.topbar__brand {
+  margin-left: var(--spacing-md);
+  flex: 1;
+}
+
+.topbar__title {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin: 0;
+}
+
+.topbar__actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.topbar__action-button {
+  padding: var(--spacing-sm);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text);
+  border-radius: var(--border-radius-sm);
+  transition: background-color 0.2s;
+}
+
+.topbar__action-button:hover {
+  background-color: var(--color-background-light);
+}
+
+.topbar__notification-icon,
+.topbar__user-icon {
+  font-size: 1.25rem;
+} 
