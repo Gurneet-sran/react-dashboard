@@ -1,13 +1,13 @@
-import { Card } from '@Features/common/Card/Card'
-import './Home.css'
+import { Card } from "@Features/common/Card/Card";
+import "./Home.css";
 
 const recentActivity = [
-  { id: 1, action: 'User John Doe logged in', time: '2 minutes ago' },
-  { id: 2, action: 'New order #1234 received', time: '15 minutes ago' },
-  { id: 3, action: 'Server backup completed', time: '1 hour ago' },
-  { id: 4, action: 'System update installed', time: '2 hours ago' },
-  { id: 5, action: 'Database optimization completed', time: '3 hours ago' },
-]
+  { id: 1, action: "User John Doe logged in", time: "2 minutes ago" },
+  { id: 2, action: "New order #1234 received", time: "15 minutes ago" },
+  { id: 3, action: "Server backup completed", time: "1 hour ago" },
+  { id: 4, action: "System update installed", time: "2 hours ago" },
+  { id: 5, action: "Database optimization completed", time: "3 hours ago" },
+];
 
 export function Home() {
   return (
@@ -34,16 +34,13 @@ export function Home() {
       <div className="home__content">
         <section className="home__chart-section">
           <h2 className="home__chart-title">Performance Overview</h2>
-          <div className="home__chart">
-            {/* Chart component will go here */}
-            <p>Chart placeholder - We can add a chart library like recharts or chart.js later</p>
-          </div>
+          <div className="home__chart"></div>
         </section>
 
-        <section className="home__activity">
+        <section className="home__activity-section">
           <h2 className="home__activity-title">Recent Activity</h2>
           <ul className="home__activity-list">
-            {recentActivity.map(activity => (
+            {recentActivity.map((activity) => (
               <li key={activity.id} className="home__activity-item">
                 {activity.action}
                 <span className="home__activity-time">{activity.time}</span>
@@ -53,5 +50,5 @@ export function Home() {
         </section>
       </div>
     </div>
-  )
-} 
+  );
+}

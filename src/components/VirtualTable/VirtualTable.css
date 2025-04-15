@@ -1,0 +1,45 @@
+.virtual-table-container {
+  position: relative;
+  overflow-y: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+}
+
+.virtual-table-content {
+  position: relative;
+  width: 100%;
+}
+
+.virtual-table-rows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  will-change: transform;
+}
+
+/* Ensure header stays fixed */
+.virtual-table-container thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Add some hover effects */
+.virtual-table-container tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Responsive table */
+@media (max-width: 640px) {
+  .virtual-table-container {
+    font-size: 0.875rem;
+  }
+  
+  .virtual-table-container td,
+  .virtual-table-container th {
+    padding: 0.5rem;
+  }
+} 

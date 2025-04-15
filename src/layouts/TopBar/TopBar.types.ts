@@ -1,3 +1,1 @@
-export interface TopBarProps {
-  onMenuClick: () => void
-} 
+export interface TopBarProps {} 

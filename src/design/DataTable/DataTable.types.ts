@@ -1,6 +1,6 @@
 import { ColumnDef } from '@tanstack/react-table'
 
-export type DataTableProps<T> = {
+export interface DataTableProps<T> {
   data: T[]
   columns: ColumnDef<T>[]
   title?: string
@@ -8,4 +8,5 @@ export type DataTableProps<T> = {
   compact?: boolean
   striped?: boolean
   hover?: boolean
+  height?: string
 } 

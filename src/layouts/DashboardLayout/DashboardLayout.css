@@ -14,4 +14,5 @@
   flex: 1;
   overflow: auto;
   background-color: var(--color-background-light);
+  padding: var(--spacing-lg);
 } 
