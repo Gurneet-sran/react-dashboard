@@ -5,13 +5,15 @@ import { Sidebar } from '@Layouts/Sidebar'
 import './DashboardLayout.css'
 
 export function DashboardLayout() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
+  const toggleSidebar = () => setIsSidebarOpen(prev => !prev)
 
   return (
     <div className="dashboard">
-      <TopBar onMenuClick={() => setIsSidebarOpen(!isSidebarOpen)} />
+      <TopBar />
       <div className="dashboard__content">
-        <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+        <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar} />
         <main className="dashboard__main">
           <Outlet />
         </main>

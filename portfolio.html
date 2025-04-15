@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gurneet Singh Sran - Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Gurneet Singh Sran</h1>
+      <p class="intro">Frontend Developer | Building Modern, Scalable Web Applications</p>
+    </div>
+  </header>
+
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="project-item">
+          <img src="project1.png" alt="Project 1">
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>Brief description of project one, focusing on key features and technologies used.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="project2.png" alt="Project 2">
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>Brief description of project two, showcasing its impact and value to users.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="project3.png" alt="Project 3">
+          <div class="project-info">
+            <h3>Project Three</h3>
+            <p>Description of project three, highlighting technologies and challenges overcome.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="container">
+      <h2>Resume</h2>
+      <div class="skills">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>React, Redux, Angular, Vue.js</li>
+          <li>HTML5, CSS3, JavaScript, TypeScript</li>
+          <li>Node.js, RESTful APIs, GraphQL</li>
+          <li>Ag-Grid, Webpack, Docker</li>
+        </ul>
+      </div>
+      <div class="experience">
+        <h3>Work Experience</h3>
+        <p><strong>Frontend Developer at Citizens Bank</strong> (2021 - Present)</p>
+        <ul>
+          <li>Led the front-end development of a critical internal tool, enhancing user experience and system performance.</li>
+          <li>Collaborated with business teams to refine product requirements and ensure the tool met user needs.</li>
+          <li>Optimized data-heavy tables and migrated legacy systems to more modern, scalable solutions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gurneet Singh Sran</p>
+    </div>
+  </footer>
+
+  <style>
+    /* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header .intro {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Project Section */
+#projects {
+  background-color: #ecf0f1;
+  padding: 40px 0;
+}
+
+#projects h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 1em;
+  color: #7f8c8d;
+}
+
+/* Resume Section */
+#resume {
+  padding: 40px 0;
+}
+
+#resume h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.skills ul,
+.experience ul {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.skills li,
+.experience li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.skills h3,
+.experience h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.experience p {
+  font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+  </style>
+</body>
+</html>

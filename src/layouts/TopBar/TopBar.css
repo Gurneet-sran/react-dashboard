@@ -4,6 +4,9 @@
   padding: var(--spacing-md);
   background-color: var(--color-background);
   border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  z-index: 20;
 }
 
 .topbar__menu-button {
@@ -24,9 +27,9 @@
 }
 
 .topbar__title {
-  font-size: 1.25rem;
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-semibold);
-  color: var(--color-text);
+  color: var(--color-primary);
   margin: 0;
 }
 
@@ -41,8 +44,8 @@
   border: none;
   cursor: pointer;
   color: var(--color-text);
-  border-radius: var(--border-radius-sm);
-  transition: background-color 0.2s;
+  border-radius: var(--radius-sm);
+  transition: background-color var(--transition-fast);
 }
 
 .topbar__action-button:hover {
@@ -51,5 +54,7 @@
 
 .topbar__notification-icon,
 .topbar__user-icon {
-  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 } 

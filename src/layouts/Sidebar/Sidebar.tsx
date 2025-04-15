@@ -1,6 +1,7 @@
 import { Link } from '@tanstack/react-router'
 import type { SidebarProps } from './Sidebar.types'
 import { routes } from '@/routes/routes.config'
+import { Icon } from '@Design/Icons'
 import './Sidebar.css'
 
 export function Sidebar({ isOpen, onClose }: SidebarProps) {
@@ -14,13 +15,24 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             key={route.path}
             to={route.path}
             className="sidebar__link"
-            onClick={onClose}
+            activeProps={{
+              className: 'sidebar__link sidebar__link--active'
+            }}
           >
-            <span className="sidebar__link-icon">{route.icon}</span>
+            <span className="sidebar__link-icon">
+              <Icon icon={route.icon} />
+            </span>
             <span className="sidebar__link-text">{route.label}</span>
           </Link>
         ))}
       </nav>
+      <button 
+        className="sidebar__toggle" 
+        onClick={onClose}
+        aria-label={isOpen ? 'Close sidebar' : 'Open sidebar'}
+      >
+        <Icon icon={isOpen ? 'CaretLeft' : 'CaretRight'} size={20} />
+      </button>
     </aside>
   )
 } 

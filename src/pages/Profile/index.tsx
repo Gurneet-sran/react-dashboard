@@ -1,3 +1,4 @@
+import React from 'react'
 import '@Pages/Profile/Profile.css'
 
 export function Profile() {

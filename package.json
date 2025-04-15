@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@phosphor-icons/react": "^2.1.7",
     "@tanstack/react-router": "^1.114.17",
     "@tanstack/react-table": "^8.21.2",
+    "@tanstack/react-virtual": "^3.13.4",
     "@tanstack/router-core": "^1.114.17",
     "@tanstack/router-devtools": "^1.114.21",
     "react": "^19.0.0",
